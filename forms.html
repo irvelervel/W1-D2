@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORMS</title>
+  </head>
+  <body>
+    <header>
+      <h1>FORMS IN HTML</h1>
+      <p>Un form è un'entità di raccolta dati.</p>
+      <p>
+        In genere si compone di un tag form, di uno o più input fields e spesso
+        di almeno un bottone
+      </p>
+    </header>
+    <main>
+      <!-- ESEMPIO DI FORM -->
+      <form>
+        <div>
+          <label for="name-input">Nome</label>
+          <input id="name-input" placeholder="Mario" />
+        </div>
+        <div>
+          <label for="surname-input">Cognome</label>
+          <input id="surname-input" placeholder="Rossi" />
+        </div>
+        <div>
+          <label for="age-input">Età</label>
+          <input id="age-input" placeholder="20" min="18" type="number" />
+        </div>
+        <div>
+          <label for="description-input">Biografia</label>
+          <textarea
+            id="description-input"
+            placeholder="Parlaci di te..."
+            rows="10"
+          ></textarea>
+          <!-- le rows indicano quanto è "alta" la textarea -->
+        </div>
+        <div>
+          <label for="mike-input">Mike</label>
+          <select id="mike-input">
+            <option>La 1</option>
+            <option>La 2</option>
+            <option>La TREEEE</option>
+          </select>
+        </div>
+        <button>INVIA</button>
+        <!-- un bottone dentro ad un form, di default, è un bottone di SUBMIT -->
+        <button type="button">FINTO</button>
+      </form>
+    </main>
+    <footer>
+      <p>2025 - EPICODE</p>
+    </footer>
+  </body>
+</html>
